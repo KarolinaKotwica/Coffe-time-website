@@ -28,12 +28,14 @@ h1, h2 {
     font-family: 'Grand Hotel', cursive;
 }
 
+.navbar {
+    height: 5em;
+}
+
 .navbar ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     font-weight: 600;
-    padding-top: 1em;
 
     li {
         padding: .3rem;
@@ -52,11 +54,11 @@ h1, h2 {
     }
 }
 
-.logo {
-    width: 225px;
-    height: 51px;
-    margin-left: 25rem;
-}
+// .logo {
+//     width: 225px;
+//     height: 51px;
+//     margin-left: 25rem;
+// }
 
 .shape-vawe {
     position: absolute;
@@ -66,18 +68,20 @@ h1, h2 {
 .coffee-main-image {
     position: absolute;
     right: 0;
+    bottom: -3px;
     z-index: 0;
 }
 
 .main-text {
-    padding: 3em;
+    padding: 1em;
+    position: relative;
+    z-index: 1;
 
     h1 {
-        font-size: 8rem;
+        font-size: 5em;
     }
 
     .main-info {
-        width: 47%;
         padding: 1em;
 
         h3 {
@@ -87,7 +91,7 @@ h1, h2 {
 
         p {
             letter-spacing: 1px;
-            margin: 1.6em 0;
+            margin: 1.8em 0;
         }
 
         .order-button {
@@ -100,3 +104,72 @@ h1, h2 {
         }
     }
 }
+
+@media only screen and (min-width: 992px) {
+    header {
+        width: 100%;
+        height: 110vh;
+        background-color: @darkblue;
+        color: #fff;
+        position: relative;
+    }
+    
+    h1, h2 {
+        font-family: 'Grand Hotel', cursive;
+    }
+    
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-weight: 600;
+        padding-top: 1em;
+    
+        li {
+            padding: .3rem;
+            line-height: 3em;
+    
+            a {
+                color: #fff;
+                font-size: 1.1rem;
+                transition: all .3s linear;
+    
+                &:hover {
+                    color: @green;
+                }
+            }
+            
+        }
+    }
+    
+    .logo {
+        width: 225px;
+        height: 51px;
+        margin-left: 25rem;
+    }
+    
+    .shape-vawe {
+        position: absolute;
+        bottom: 0;
+    }
+    
+    .coffee-main-image {
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+        z-index: 0;
+    }
+    
+    .main-text {
+        padding: 3em;
+    
+        h1 {
+            font-size: 8rem;
+        }
+    
+        .main-info {
+            width: 47%;
+            padding: 1em;
+        }
+    }
+} 
