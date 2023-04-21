@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+@darkblue: #222831;
+@green: #29a19c;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 110vh;
+    background-color: @darkblue;
+    color: #fff;
+    position: relative;
+}
+
+h1, h2 {
+    font-family: 'Grand Hotel', cursive;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-weight: 600;
+    padding-top: 1em;
+
+    li {
+        padding: .3rem;
+        line-height: 3em;
+
+        a {
+            color: #fff;
+            font-size: 1.1rem;
+            transition: all .3s linear;
+
+            &:hover {
+                color: @green;
+            }
+        }
+        
+    }
+}
+
+.logo {
+    width: 225px;
+    height: 51px;
+    margin-left: 25rem;
+}
+
+.shape-vawe {
+    position: absolute;
+    bottom: 0;
+}
+
+.coffee-main-image {
+    position: absolute;
+    right: 0;
+    z-index: 0;
+}
+
+.main-text {
+    padding: 3em;
+
+    h1 {
+        font-size: 8rem;
+    }
+
+    .main-info {
+        width: 47%;
+        padding: 1em;
+
+        h3 {
+            text-transform: uppercase;
+            font-size: 1.6rem;
+        }
+
+        p {
+            letter-spacing: 1px;
+            margin: 1.6em 0;
+        }
+
+        .order-button {
+            color: #fff;
+            padding: 10px 30px;
+            border-radius: 10px;
+            background-color: @green;
+            font-weight: 600;
+            font-size: 1.3em;
+        }
+    }
+}
