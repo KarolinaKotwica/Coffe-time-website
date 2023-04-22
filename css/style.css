@@ -25,6 +25,7 @@
   box-sizing: border-box;
   list-style-type: none;
   text-decoration: none;
+  color: #fff;
 }
 body {
   font-family: 'Montserrat', sans-serif;
@@ -33,7 +34,6 @@ header {
   width: 100%;
   height: 110vh;
   background-color: #222831;
-  color: #fff;
   position: relative;
 }
 h1,
@@ -62,7 +62,7 @@ h2 {
 }
 .shape-vawe {
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
 }
 .coffee-main-image {
   position: absolute;
@@ -96,6 +96,29 @@ h2 {
   background-color: #29a19c;
   font-weight: 600;
   font-size: 1.3em;
+}
+.blue-background {
+  height: 840px;
+  background-color: #29a19c;
+  text-align: center;
+}
+.blue-background h2 {
+  font-size: 3.8rem;
+}
+.blue-background .order {
+  padding: 15px;
+  border-radius: 30px;
+  background-color: #222831;
+  width: 50%;
+  margin: 0 auto;
+}
+.blue-background .image-coffee img {
+  width: 100%;
+  margin: 3em 0;
+}
+.blue-background .text {
+  font-size: large;
+  padding: 1.1rem;
 }
 @media only screen and (min-width: 992px) {
   header {
@@ -135,7 +158,7 @@ h2 {
   }
   .shape-vawe {
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
   }
   .coffee-main-image {
     position: absolute;
@@ -152,5 +175,24 @@ h2 {
   .main-text .main-info {
     width: 47%;
     padding: 1em;
+  }
+  .blue-background {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .blue-background h2 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .blue-background .order {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .blue-background .image-coffee {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .blue-background .text {
+    grid-area: 2 / 2 / 3 / 3;
   }
 }

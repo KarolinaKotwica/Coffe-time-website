@@ -10,6 +10,7 @@
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
+    color: #fff;
 }
 
 body {
@@ -20,7 +21,6 @@ header {
     width: 100%;
     height: 110vh;
     background-color: @darkblue;
-    color: #fff;
     position: relative;
 }
 
@@ -62,7 +62,7 @@ h1, h2 {
 
 .shape-vawe {
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
 }
 
 .coffee-main-image {
@@ -102,6 +102,35 @@ h1, h2 {
             font-weight: 600;
             font-size: 1.3em;
         }
+    }
+}
+
+.blue-background {
+    height: 840px;
+    background-color: @green;
+    text-align: center;
+
+    h2 {
+        font-size: 3.8rem;
+    }
+
+    .order {
+        padding: 15px;
+        border-radius: 30px;
+        background-color: @darkblue;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .image-coffee img {
+        width: 100%;
+        margin: 3em 0;
+    }
+
+    .text {
+        font-size: large;
+        padding: 1.1rem;
+
     }
 }
 
@@ -150,7 +179,7 @@ h1, h2 {
     
     .shape-vawe {
         position: absolute;
-        bottom: 0;
+        bottom: 0px;
     }
     
     .coffee-main-image {
@@ -172,4 +201,19 @@ h1, h2 {
             padding: 1em;
         }
     }
+
+    .blue-background {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px; 
+    
+        h2 { grid-area: 1 / 1 / 2 / 2; }
+        .order { grid-area: 2 / 1 / 3 / 2; }
+        .image-coffee { grid-area: 1 / 2 / 2 / 3; }
+        .text { grid-area: 2 / 2 / 3 / 3; } 
+    }
 } 
+
+
