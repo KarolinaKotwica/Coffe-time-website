@@ -97,26 +97,38 @@ h2 {
   font-weight: 600;
   font-size: 1.3em;
 }
-.blue-background {
+.green-background {
   height: 840px;
   background-color: #29a19c;
   text-align: center;
 }
-.blue-background h2 {
+.blue-background {
+  height: 840px;
+  background-color: #222831;
+  text-align: center;
+}
+.style-center h2 {
   font-size: 3.8rem;
 }
-.blue-background .order {
+.style-center .order {
   padding: 15px;
   border-radius: 30px;
   background-color: #222831;
   width: 50%;
-  margin: 0 auto;
+  margin: 1.4em auto 0 auto;
 }
-.blue-background .image-coffee img {
+.style-center .order-green-color-button {
+  padding: 15px;
+  border-radius: 30px;
+  background-color: #29a19c;
+  width: 50%;
+  margin: 1.4em auto 0 auto;
+}
+.style-center .image-coffee img {
   width: 100%;
   margin: 3em 0;
 }
-.blue-background .text {
+.style-center .text {
   font-size: large;
   padding: 1.1rem;
 }
@@ -176,23 +188,23 @@ h2 {
     width: 47%;
     padding: 1em;
   }
-  .blue-background {
+  .green-background {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
-  .blue-background h2 {
+  .green-background h2 {
     grid-area: 1 / 1 / 2 / 2;
   }
-  .blue-background .order {
+  .green-background .order {
     grid-area: 2 / 1 / 3 / 2;
   }
-  .blue-background .image-coffee {
+  .green-background .image-coffee {
     grid-area: 1 / 2 / 2 / 3;
   }
-  .blue-background .text {
+  .green-background .text {
     grid-area: 2 / 2 / 3 / 3;
   }
 }
