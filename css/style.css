@@ -85,13 +85,32 @@ h2 {
   letter-spacing: 1px;
   margin: 1.8em 0;
 }
-.main-text .main-info .order-button {
+.order-button-green {
   color: #fff;
   padding: 10px 30px;
   border-radius: 10px;
   background-color: #29a19c;
   font-weight: 600;
   font-size: 1.3em;
+  transition: all 0.3s ease;
+}
+.order-button-green:hover {
+  background-color: #276c69;
+  -webkit-box-shadow: inset 0px 0px 11px -4px #000000;
+  box-shadow: inset 0px 0px 11px -4px #000000;
+}
+.order-button-blue {
+  padding: 12px 30px;
+  border-radius: 10px;
+  background-color: #222831;
+  font-weight: 600;
+  font-size: 1.3em;
+  transition: all 0.3s ease;
+}
+.order-button-blue:hover {
+  background-color: #384456;
+  -webkit-box-shadow: inset 0px 0px 11px -4px #000000;
+  box-shadow: inset 0px 0px 11px -4px #000000;
 }
 .green-background {
   height: auto;
@@ -107,17 +126,8 @@ h2 {
   font-size: 3.8rem;
   padding-bottom: 0.5em;
 }
+.style-center .order-green-color-button,
 .style-center .order {
-  padding: 15px;
-  border-radius: 30px;
-  background-color: #222831;
-  width: 50%;
-  margin: 1.4em auto 0 auto;
-}
-.style-center .order-green-color-button {
-  padding: 15px;
-  border-radius: 30px;
-  background-color: #29a19c;
   width: 50%;
   margin: 1.4em auto 0 auto;
 }
@@ -222,46 +232,31 @@ footer ul {
 }
 @media only screen and (min-width: 992px) {
   .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #fff;
+    position: fixed;
   }
   .logo-container {
-    flex: 1;
-  }
-  .menu-container {
-    flex: 0 0 auto;
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #222831;
+    width: 100vw;
   }
   .menu-icon {
-    font-size: 24px;
-    cursor: pointer;
+    display: none;
   }
   .menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    padding: 20px;
-    background-color: #fff;
-    list-style: none;
+    visibility: visible;
+    opacity: 1;
+    position: inherit;
+    right: 0;
     margin: 0;
-    width: 100%;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-  }
-  .menu li {
-    margin-bottom: 10px;
-  }
-  .menu a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
+    padding: 0;
+    box-shadow: none;
+    background-color: #222831;
   }
   header {
     width: 100%;
-    height: 110vh;
+    height: 105vh;
     background-color: #222831;
     color: #fff;
     position: relative;
@@ -273,13 +268,17 @@ footer ul {
   .navbar ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: right;
     font-weight: 600;
-    padding-top: 1em;
+    padding-top: 2em;
   }
   .navbar ul li {
-    padding: 0.3rem;
+    padding: 0.3rem 1.3em;
     line-height: 3em;
+    opacity: 1;
+  }
+  .navbar ul li:last-child {
+    margin-right: 5em;
   }
   .navbar ul li a {
     color: #fff;
@@ -291,8 +290,8 @@ footer ul {
   }
   .logo {
     width: 225px;
-    height: 51px;
-    margin-left: 25rem;
+    height: auto;
+    padding-top: 2em;
   }
   .shape-vawe {
     width: 100%;
@@ -300,13 +299,14 @@ footer ul {
     bottom: 0px;
   }
   .coffee-main-image {
+    width: 50%;
     position: absolute;
     right: 0;
-    bottom: -3px;
+    bottom: 1rem;
     z-index: 0;
   }
   .main-text {
-    padding: 3em;
+    padding: 13em 8em;
   }
   .main-text h1 {
     font-size: 8rem;
@@ -315,23 +315,39 @@ footer ul {
     width: 47%;
     padding: 1em;
   }
-  .green-background {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+  .green-background,
+  .style-center {
+    width: 100%;
+    display: flex;
   }
-  .green-background h2 {
-    grid-area: 1 / 1 / 2 / 2;
+  .green-background img,
+  .style-center img {
+    width: 60%;
   }
-  .green-background .order {
-    grid-area: 2 / 1 / 3 / 2;
+  .green-background .flex1,
+  .style-center .flex1 {
+    position: relative;
+    float: left;
+    top: 66%;
+    left: 28%;
+    transform: translate(-50%, -50%);
   }
-  .green-background .image-coffee {
-    grid-area: 1 / 2 / 2 / 3;
+  .green-background h2,
+  .style-center h2 {
+    font-size: 6.8em;
   }
-  .green-background .text {
-    grid-area: 2 / 2 / 3 / 3;
+  .green-background .flex1,
+  .style-center .flex1,
+  .green-background .flex2,
+  .style-center .flex2 {
+    width: 50%;
+  }
+  .green-background .flex1 .order,
+  .style-center .flex1 .order {
+    width: 35%;
+  }
+  .text {
+    text-align: right;
+    margin-right: 2rem;
   }
 }
