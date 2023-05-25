@@ -412,4 +412,24 @@ footer ul {
     width: 80%;
     margin: 0 auto;
   }
+  .footer {
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  .footer h3 {
+    margin: 15px 0;
+  }
+  .footer img {
+    margin-right: 13em;
+    width: 350px;
+    height: 75%;
+  }
+  .footer-icons {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
 }
