@@ -28,6 +28,7 @@ header {
 
 h1, h2 {
     font-family: 'Grand Hotel', cursive;
+    font-size: 3.8rem;
 }
 
 .navbar {
@@ -59,12 +60,14 @@ h1, h2 {
     right: 0;
     bottom: -3px;
     z-index: 0;
+    opacity: 0.6;
 }
 
 .main-text {
-    padding: 1em;
+    padding: 1.8em;
     position: relative;
     z-index: 1;
+    margin-top: 11px;
 
     h1 {
         font-size: 5em;
@@ -85,6 +88,10 @@ h1, h2 {
     }
 }
 
+.names {
+    padding: 1em 0;
+}
+
 .order-button-green {
     color: #fff;
     padding: 10px 30px;
@@ -98,6 +105,12 @@ h1, h2 {
         background-color: @green-dark;
         -webkit-box-shadow: inset 0px 0px 11px -4px #000000; 
         box-shadow: inset 0px 0px 11px -4px #000000;
+    }
+}
+
+.image-branch {
+    img {
+        margin: 1.8rem 0;
     }
 }
 
@@ -121,6 +134,7 @@ h1, h2 {
     height: auto;
     background-color: @green;
     text-align: center;
+    padding-top: 1rem;
 }
 
 .blue-background {
@@ -131,11 +145,6 @@ h1, h2 {
 
 .style-center {
 
-    h2 {
-        font-size: 3.8rem;
-        padding-bottom: .5em;
-    }
-
     .order-green-color-button, .order {
         width: 50%;
         margin: 1.4em auto 0 auto;
@@ -144,10 +153,6 @@ h1, h2 {
     .image-coffee img {
         width: 80%;
         margin: 3em 0;
-    }
-
-    .image-voucher img {
-        width: 90%;
     }
 
     .text {
@@ -161,6 +166,27 @@ h1, h2 {
     width: 100%;
     display: block;
     background-color: @darkblue;
+}
+
+.image-voucher {
+    margin: 1em 0;
+
+    img {
+        max-width: 90%;
+    }
+}
+
+.voucher-button {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.image-reviews   {
+    margin: 2em 0;
+}
+
+.ella {
+    display: none;
 }
 
 .footer {
