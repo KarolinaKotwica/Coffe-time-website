@@ -108,6 +108,7 @@ h2 {
   transition: all 0.3s ease;
 }
 .order-button-blue:hover {
+  cursor: pointer;
   background-color: #384456;
   -webkit-box-shadow: inset 0px 0px 11px -4px #000000;
   box-shadow: inset 0px 0px 11px -4px #000000;
@@ -306,7 +307,7 @@ footer ul {
     z-index: 0;
   }
   .main-text {
-    padding: 13em 8em;
+    padding: 11em 8em;
   }
   .main-text h1 {
     font-size: 8rem;
