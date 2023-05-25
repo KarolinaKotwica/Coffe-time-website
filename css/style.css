@@ -89,7 +89,7 @@ h2 {
   color: #fff;
   padding: 10px 30px;
   border-radius: 10px;
-  background-color: #29a19c;
+  background-color: #24A39D;
   font-weight: 600;
   font-size: 1.3em;
   transition: all 0.3s ease;
@@ -114,7 +114,7 @@ h2 {
 }
 .green-background {
   height: auto;
-  background-color: #29a19c;
+  background-color: #24A39D;
   text-align: center;
 }
 .blue-background {
@@ -180,7 +180,7 @@ footer ul {
 }
 .menu-icon:hover {
   cursor: pointer;
-  color: #29a19c;
+  color: #24A39D;
 }
 #menu-toggle {
   display: none;
@@ -224,7 +224,7 @@ footer ul {
   transition: all 0.4s linear;
 }
 .menu a:hover {
-  color: #29a19c;
+  color: #24A39D;
 }
 .fa-brands {
   padding-top: 0.8em;
@@ -286,7 +286,7 @@ footer ul {
     transition: all 0.3s linear;
   }
   .navbar ul li a:hover {
-    color: #29a19c;
+    color: #24A39D;
   }
   .logo {
     width: 225px;
@@ -315,39 +315,100 @@ footer ul {
     width: 47%;
     padding: 1em;
   }
-  .green-background,
-  .style-center {
+  .green-background {
     width: 100%;
     display: flex;
   }
-  .green-background img,
-  .style-center img {
+  .green-background .center-section-flex {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .green-background .style-center {
+    width: 100%;
+    display: flex;
+  }
+  .green-background .style-center .image-coffee img {
     width: 60%;
   }
-  .green-background .flex1,
-  .style-center .flex1 {
+  .green-background .style-center .flex1 {
     position: relative;
     float: left;
     top: 66%;
     left: 28%;
     transform: translate(-50%, -50%);
   }
-  .green-background h2,
-  .style-center h2 {
+  .green-background .style-center h2 {
     font-size: 6.8em;
   }
-  .green-background .flex1,
-  .style-center .flex1,
-  .green-background .flex2,
-  .style-center .flex2 {
+  .green-background .style-center .flex1,
+  .green-background .style-center .flex2 {
     width: 50%;
   }
-  .green-background .flex1 .order,
-  .style-center .flex1 .order {
+  .green-background .style-center .flex1 .order {
     width: 35%;
   }
-  .text {
+  .green-background .style-center .text {
     text-align: right;
-    margin-right: 2rem;
+    margin-right: 4rem;
+    width: 90%;
+  }
+  .center-section {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .blue-background {
+    width: 100%;
+    display: block;
+  }
+  .blue-background .style-center {
+    width: 100%;
+    display: flex;
+  }
+  .blue-background .text {
+    text-align: left;
+    margin-left: 4rem;
+    width: 90%;
+  }
+  .blue-background .image-coffee img {
+    width: 60%;
+  }
+  .blue-background .flex1 {
+    position: relative;
+    float: left;
+    top: 66%;
+    left: 28%;
+    transform: translate(-58%, 25%);
+  }
+  .blue-background h2 {
+    font-size: 6.8em;
+  }
+  .blue-background .flex1,
+  .blue-background .flex2 {
+    width: 50%;
+  }
+  .blue-background .flex1 .order {
+    width: 35%;
+  }
+  .blue-background .voucher-button {
+    width: 35%;
+    margin: 0 auto;
+  }
+  .blue-background .image-voucher {
+    margin-bottom: 2em;
+  }
+  .blue-background .reviews {
+    display: flex;
+  }
+  .blue-background .reviews .names {
+    padding: 3em;
+  }
+  .blue-background .reviews .names .text {
+    text-align: center;
+  }
+  .blue-background .image-reviews {
+    width: 80%;
+    margin: 0 auto;
   }
 }

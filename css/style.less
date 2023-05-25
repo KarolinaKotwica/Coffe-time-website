@@ -3,7 +3,7 @@
 
 @darkblue: #222831;
 @lightblue: #384456;
-@green: #29a19c;
+@green: #24A39D;
 @green-dark: #276c69;
 
 * {
@@ -370,36 +370,117 @@ footer {
         }
     }
 
-    .green-background, .style-center {
+    .green-background {
         width: 100%;
         display: flex;
 
-        img {
-            width: 60%;
+        .center-section-flex {
+            flex-direction: column;
+            justify-content: center;
         }
 
+        .style-center {
+            width: 100%;
+            display: flex;
+    
+            .image-coffee img {
+                width: 60%;
+            }
+    
+            .flex1 {
+                position: relative;
+                float: left;
+                top: 66%;
+                left: 28%;
+                transform: translate(-50%, -50%);
+            }
+    
+            h2 {
+                font-size: 6.8em;
+            }
+    
+            .flex1, .flex2 {
+                width: 50%;
+            }
+    
+            .flex1 .order {
+                width: 35%;
+            }
+
+            .text { text-align: right; margin-right: 4rem; width: 90%;}
+        }
+        
+    }
+
+    .center-section {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .blue-background {
+        width: 100%;
+        display: block;
+
+        .style-center {
+            width: 100%;
+            display: flex;
+        }
+
+        .text { text-align: left; margin-left: 4rem; width: 90%;}
+
+        .image-coffee img {
+            width: 60%;
+        }
+    
         .flex1 {
             position: relative;
             float: left;
             top: 66%;
             left: 28%;
-            transform: translate(-50%, -50%);
+            transform: translate(-58%, 25%);
         }
-
+    
         h2 {
             font-size: 6.8em;
         }
-
+    
         .flex1, .flex2 {
             width: 50%;
         }
-
+    
         .flex1 .order {
             width: 35%;
         }
-    }
 
-    .text { text-align: right; margin-right: 2rem;}
+        .voucher-button {
+            width: 35%;
+            margin: 0 auto;
+        }
+
+        .image-voucher {
+            margin-bottom: 2em;
+        }
+
+        .reviews {
+            display: flex;
+
+            .names {
+                padding: 3em;
+
+                .text {
+                    text-align: center;
+                }
+            }
+        }
+
+        .image-reviews {
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+    }
       
 } 
 
