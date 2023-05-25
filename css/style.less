@@ -108,10 +108,34 @@ h1, h2 {
     }
 }
 
+.postcard {
+	display: inline-block;
+	max-width: 460px;
+	text-align: center;
+	padding: 5px;
+    margin: 0 auto;
+}
+
+.photo {
+	max-width: 280px;
+	overflow: hidden;
+}
+
 .image-branch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     img {
+        max-width: 280px;
         margin: 1.8rem 0;
+        transition: all 0.5s ease-in-out;
     }
+}
+.photo:hover img {
+	-webkit-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+	transform: scale(1.15);
 }
 
 .order-button-blue {
@@ -204,6 +228,15 @@ h1, h2 {
 
         li {
             padding: 5px;
+
+            a {
+                transition: all .3s ease-in;
+
+                &:hover {
+                    cursor: pointer;
+                    color: @darkblue;
+                }
+            }
         }
     }
 }
@@ -290,6 +323,11 @@ footer {
 .fa-brands {
     padding-top: .8em;
     font-size: 1.6em;
+    transition: all .4s ease-in;
+
+    &:hover {
+        color: @darkblue;
+    }
 }
 
 @media only screen and (min-width: 992px) {

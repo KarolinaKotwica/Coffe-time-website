@@ -105,8 +105,31 @@ h2 {
   -webkit-box-shadow: inset 0px 0px 11px -4px #000000;
   box-shadow: inset 0px 0px 11px -4px #000000;
 }
+.postcard {
+  display: inline-block;
+  max-width: 460px;
+  text-align: center;
+  padding: 5px;
+  margin: 0 auto;
+}
+.photo {
+  max-width: 280px;
+  overflow: hidden;
+}
+.image-branch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .image-branch img {
+  max-width: 280px;
   margin: 1.8rem 0;
+  transition: all 0.5s ease-in-out;
+}
+.photo:hover img {
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  transform: scale(1.15);
 }
 .order-button-blue {
   padding: 12px 30px;
@@ -182,6 +205,13 @@ h2 {
 .footer ul li {
   padding: 5px;
 }
+.footer ul li a {
+  transition: all 0.3s ease-in;
+}
+.footer ul li a:hover {
+  cursor: pointer;
+  color: #222831;
+}
 footer ul {
   display: flex;
   justify-content: space-evenly;
@@ -249,6 +279,10 @@ footer ul {
 .fa-brands {
   padding-top: 0.8em;
   font-size: 1.6em;
+  transition: all 0.4s ease-in;
+}
+.fa-brands:hover {
+  color: #222831;
 }
 @media only screen and (min-width: 992px) {
   .navbar {
